@@ -7,11 +7,40 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-        <Label x:Name="Out_char" FontSize="20" TextColor="Black" Margin="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="Beige"></Label>
-        <Label x:Name="In_char" FontSize="20" TextColor="Black" Margin="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="Beige"></Label>
+        <Label x:Name="Out_char" 
+               FontSize="20" 
+               TextColor="Black" 
+               Margin="30,10,30,10" 
+               VerticalTextAlignment="Center" 
+               HorizontalTextAlignment="Center" 
+               BackgroundColor="Beige"></Label>
+        <Label x:Name="In_char" 
+               FontSize="20" 
+               TextColor="Black" 
+               Margin="30,10,30,10" 
+               VerticalTextAlignment="Center" 
+               HorizontalTextAlignment="Center" 
+               BackgroundColor="Beige"></Label>
 
-        <Button Text="Click for a Dot"  Clicked="Dot_Clicked" TextColor="Black" BackgroundColor="Aquamarine" CornerRadius="25"></Button>
-        <Button Text="Click for a Dash"  Clicked="Dash_Clicked" TextColor="Black" BackgroundColor="Aqua" CornerRadius="25"></Button>
-        <Button Text="Click for a Space" Clicked="Space_Clicked" BackgroundColor="Coral" CornerRadius="25"></Button>
+        <Button x:Name="DotButton" 
+                Text="Click for a Dot"
+                SemanticProperties.Hint="Click to enter a dot character, for the morse code page."
+                Clicked="Dot_Clicked" 
+                TextColor="Black" 
+                BackgroundColor="Aquamarine" 
+                CornerRadius="25"></Button>
+        <Button x:Name="DashButton" 
+                Text="Click for a Dash"
+                SemanticProperties.Hint="Click to enter a dash character, for the morse code page."
+                Clicked="Dash_Clicked" 
+                TextColor="Black" 
+                BackgroundColor="Aqua" 
+                CornerRadius="25"></Button>
+        <Button x:Name="SpaceButton" 
+                Text="Click for a Space"
+                SemanticProperties.Hint="Click to enter a space character, for the morse code page."
+                Clicked="Space_Clicked" 
+                BackgroundColor="Coral" 
+                CornerRadius="25"></Button>
     </VerticalStackLayout>
 </ContentPage>

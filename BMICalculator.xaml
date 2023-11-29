@@ -11,18 +11,25 @@
                 x:Name="Out_text"
                 Text="See your BMI Calculated!"
                 SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Hint="Enter data below to calculate your BMI."
                 FontSize="30"
                 HorizontalOptions="Center" />
 
         <Entry
                 x:Name="In_weight"
-                Placeholder="Please Enter Weight in Pounds: "
-                FontSize="16"
-                ></Entry>
+                Placeholder="Click to enter weight in pounds: "
+                FontSize="16"></Entry>
 
-        <Editor x:Name="In_heightFeet" Placeholder="Please enter height in feet:" FontSize="16"></Editor>
-        <Editor x:Name="In_heightInches" Placeholder="Please enter height in inches:" FontSize="16"></Editor>
+        <Editor x:Name="In_heightFeet" 
+                Placeholder="Click to enter height in feet:"
+                FontSize="16"></Editor>
+        <Editor x:Name="In_heightInches" 
+                Placeholder="Click to enter height in inches:"
+                FontSize="16"></Editor>
 
-        <Button Text="Calculate BMI" Clicked="Button_Clicked"></Button>
+        <Button x:Name="BMI_Button"
+            Text="Calculate BMI"
+                SemanticProperties.Hint="Click to calculate your BMI based on the values entered above. "
+                Clicked="Button_Clicked"></Button>
     </VerticalStackLayout>
 </ContentPage>

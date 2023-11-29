@@ -6,23 +6,49 @@
     xmlns:local="clr-namespace:Mod3LabE"
     Shell.FlyoutBehavior="Flyout"
     Title="Mod3LabE">
-    <FlyoutItem Title="Lab E Total">
-        <ShellContent Title="BMI Calculator" 
+    <FlyoutItem Title="Lab E Total"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Lab E Total"
+                SemanticProperties.Hint="A collapsable menu, titled Lab E Total.">
+        <ShellContent Title="BMI Calculator"
+                      SemanticProperties.HeadingLevel="Level3"
+                      SemanticProperties.Description="BMI Calculator"
+                      SemanticProperties.Hint="Click to move to the BMI Calculator page."
                       ContentTemplate="{DataTemplate local:BMICalculator}"/>
-        <ShellContent Title="Morse Code" 
+        <ShellContent Title="Morse Code"
+                      SemanticProperties.HeadingLevel="Level3"
+                      SemanticProperties.Description="Morse Code"
+                      SemanticProperties.Hint="Click to move to the Morse Code page."
                       ContentTemplate="{DataTemplate local:MorseCode}"/>
-        <ShellContent Title="Buy Alcohol" 
+        <ShellContent Title="Buy Alcohol"
+                      SemanticProperties.HeadingLevel="Level3"
+                      SemanticProperties.Description="Buy Alcohol"
+                      SemanticProperties.Hint="Click to move to the, old enough to buy alcohol, page. "
                       ContentTemplate="{DataTemplate local:BuyAlcohol}"/>
-        <ShellContent Title="Cat Fact" 
+        <ShellContent Title="Cat Fact"
+                      SemanticProperties.HeadingLevel="Level3"
+                      SemanticProperties.Description="Cat Fact"
+                      SemanticProperties.Hint="Click to move to the Cat Fact page."
                       ContentTemplate="{DataTemplate local:CatFact}"/>
     </FlyoutItem>
-    <FlyoutItem Title="BMI Calculator" Icon="dotnet_bot.png">
+    <FlyoutItem Title="BMI Calculator" 
+                SemanticProperties.HeadingLevel="Level3"
+                SemanticProperties.Description="BMI Calculator"
+                SemanticProperties.Hint="Click to move to the BMI Calculator Page."
+                Icon="dotnet_bot.png">
         <ShellContent Title="BMI Calculator" Icon="dotnet_bot.png"
+                      SemanticProperties.HeadingLevel="Level3"
+                      SemanticProperties.Description="BMI Calculator"
+                      SemanticProperties.Hint="Click to move to the BMI Calculator page."
               ContentTemplate="{DataTemplate local:BMICalculator}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Cat Fact">
-        <ShellContent Title="Random Cat Fact" Icon="dotnet_bot.png" 
+        <ShellContent Title="Random Cat Fact"
+                      SemanticProperties.HeadingLevel="Level3"
+                      SemanticProperties.Description="Cat Fact"
+                      SemanticProperties.Hint="Click to move to the Cat Fact page."
+                      Icon="dotnet_bot.png" 
               ContentTemplate="{DataTemplate local:CatFact}"/>
     </FlyoutItem>
 </Shell>

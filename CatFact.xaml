@@ -6,10 +6,13 @@
     <VerticalStackLayout>
         <Label
             x:Name="Fact"
-            Text="Welcome to .NET MAUI!"
+            Text="A random cat fact will appear here."
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Random Cat Fact" Clicked="RandomClick"></Button> 
+        <Button x:Name="RandomCatFact"
+            Text="Random Cat Fact"
+                SemanticProperties.Hint="Click to generate a random cat fact above this button on the page."
+                Clicked="RandomClick"></Button> 
     </VerticalStackLayout>
 </ContentPage>
