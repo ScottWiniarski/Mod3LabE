@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mod3LabE.MorseCode"
-             Title="MorseCode">
+             Title="{x:Static strings:AppResources.MorseCode}">
     <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -23,21 +23,21 @@
                BackgroundColor="Beige"></Label>
 
         <Button x:Name="DotButton" 
-                Text="Click for a Dot"
+                Text="{x:Static strings:AppResources.DotButton}"
                 SemanticProperties.Hint="Click to enter a dot character, for the morse code page."
                 Clicked="Dot_Clicked" 
                 TextColor="Black" 
                 BackgroundColor="Aquamarine" 
                 CornerRadius="25"></Button>
         <Button x:Name="DashButton" 
-                Text="Click for a Dash"
+                Text="{x:Static strings:AppResources.DashButton}"
                 SemanticProperties.Hint="Click to enter a dash character, for the morse code page."
                 Clicked="Dash_Clicked" 
                 TextColor="Black" 
                 BackgroundColor="Aqua" 
                 CornerRadius="25"></Button>
         <Button x:Name="SpaceButton" 
-                Text="Click for a Space"
+                Text="{x:Static strings:AppResources.SpaceButton}"
                 SemanticProperties.Hint="Click to enter a space character, for the morse code page."
                 Clicked="Space_Clicked" 
                 BackgroundColor="Coral" 

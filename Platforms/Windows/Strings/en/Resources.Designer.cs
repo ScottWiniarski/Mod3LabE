@@ -187,6 +187,15 @@ namespace Mod3LabE.Platforms.Windows.Strings.en {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mod3LabE.
+        /// </summary>
+        internal static string Mod3LabE {
+            get {
+                return ResourceManager.GetString("Mod3LabE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Morse Code.
         /// </summary>
         internal static string Morse_Code {

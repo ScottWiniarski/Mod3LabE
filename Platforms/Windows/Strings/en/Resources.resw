@@ -160,6 +160,9 @@
   <data name="Lab E Total" xml:space="preserve">
     <value>Lab E Total</value>
   </data>
+  <data name="Mod3LabE" xml:space="preserve">
+    <value>Mod3LabE</value>
+  </data>
   <data name="Morse Code" xml:space="preserve">
     <value>Morse Code</value>
   </data>
